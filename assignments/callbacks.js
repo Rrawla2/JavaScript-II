@@ -86,8 +86,8 @@ contains('Chalk', items, contains => console.log(contains));
 
 
 /* STRETCH PROBLEM */
-items2 = ['Cherries', 'Blueberries', 'Cherries', 'Bananas', 'Oranges', 'Carrots', 'Bananas']
-newitems = []
+fruits = ['Cherries', 'Blueberries', 'Cherries', 'Bananas', 'Oranges', 'Carrots', 'Bananas']
+newFruits = []
 
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.

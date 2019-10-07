@@ -3,7 +3,21 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+const nums = [2, 4, 6, 8, 10];
 
+function add(num1, num2) {
+  
+  const added = num1 + num2;
+  if (num1 in nums){
+    console.log(`I see a ${num1}`)
+    console.log(added);
+  } else {
+    console.log(`I don't see a ${num1}`)
+  }
+  
+}
+
+add(2, 3)
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
