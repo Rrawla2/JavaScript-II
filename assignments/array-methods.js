@@ -62,12 +62,6 @@ runners.forEach(item =>  {
   fullNames.push(`${item.first_name} ${item.last_name}`);
 });
 
-// for(let i = 0; i < runners.length; i++) {
-//   first_name = runners[i].first_name;
-//   last_name = runners[i].last_name;
-//   fullNames.push(first_name + ' ' + last_name);
-// }
-
 console.log(fullNames);
 
 // ==== Challenge 2: Use .map() ====
@@ -92,6 +86,11 @@ console.log(runnersLargeSizeShirt);
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations and save the total into a ticketPriceTotal variable.
 let ticketPriceTotal = 0;
+
+ticketPriceTotal = runners.reduce(function(sum, runners)  {
+  return sum + runners.donation;
+ }, 0);
+
 console.log(ticketPriceTotal);
 
 // ==== Challenge 5: Be Creative ====
