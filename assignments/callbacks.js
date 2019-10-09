@@ -43,7 +43,7 @@ function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
   return cb(arr.length);
 }
-getLength(items, item => console.log(`My length is ${item}`));
+getLength(items, item => console.log(`My length is ${item} items long`));
 
 
 

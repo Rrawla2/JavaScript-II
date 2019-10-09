@@ -17,7 +17,7 @@ function add(num1, num2) {
   
 }
 
-add(2, 3)
+add(2, 3);
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
@@ -45,3 +45,14 @@ const counterFactory = () => {
   // `increment` should increment a counter variable in closure scope and return it.
   // `decrement` should decrement the counter variable and return it.
 };
+const counter = () => {
+  let count = 0;
+  return function() {
+    return ++count;
+  }
+};
+
+const newCounter = counter();
+console.log(newCounter());
+console.log(newCounter());
+console.log(newCounter());
