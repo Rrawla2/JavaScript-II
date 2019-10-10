@@ -68,7 +68,7 @@ console.log(fullNames);
 // The event director needs to have all the runners' first names in uppercase because the director BECAME DRUNK WITH POWER. Populate an array called `firstNamesAllCaps`. This array will contain just strings.
 let firstNamesAllCaps = [];
 
-firstNamesAllCaps.push(runners.map(item => item.first_name.toUpperCase()));
+firstNamesAllCaps = runners.map(item => item.first_name.toUpperCase());
 
 console.log(firstNamesAllCaps);
 
@@ -97,7 +97,25 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// Send confirmation emails to all the runners using their first name in a form email asking that they confirm their spot in the race.
+let emailAddresses = [];
+
+emailAddresses = runners.map(item => `${item.first_name} :;: ${item.email}`);
+
+console.log(emailAddresses);
 
 // Problem 2
+// Match donation amounts with the company names to verify with the company representative.
+let compDonateAmt = [];
+
+compDonateAmt = runners.map(item => `${item.donation}   ${item.company_name}`);
+
+console.log(compDonateAmt);
 
 // Problem 3
+// Capitalize all last names and match with their ID numbers to print on the shirts as their runner number.
+let lastNamesID = [];
+
+lastNamesID = runners.map(item => `${item.id} ${item.last_name.toUpperCase()}`);
+
+console.log(lastNamesID);
